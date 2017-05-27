@@ -1,0 +1,19 @@
+syntax = "proto3";
+option objc_class_prefix = "UCSEXM";
+option java_package = "com.ucse.xm";
+package UCSEXM;
+
+message request
+{
+  string requestid = 1;
+	int32 index = 2;
+	string url = 3;
+}
+
+
+message xesponse
+{
+	string errorMsg = 1;
+	int64  errorCode = 2;
+	repeated string list = 3;
+}
